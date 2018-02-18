@@ -83,5 +83,6 @@ Materiały
 - https://virtualenvwrapper.readthedocs.io/en/latest/
 
 Monitoring
+
 .. image:: https://travis-ci.org/martaapankow/se_hello_printer_app.svg?branch=master
     :target: https://travis-ci.org/martaapankow/se_hello_printer_app
