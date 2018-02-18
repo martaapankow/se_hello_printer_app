@@ -10,7 +10,7 @@ install:
   make deps
 
 script:
-  make test
+  make test_xunit
 
 after_success:
   - make docker_build
@@ -19,4 +19,4 @@ after_success:
 deploy:
   provider: heroku
   app: secure-scrubland-39460
-  api_key: ${HEROKU_API_KEY} 
+  api_key: ${HEROKU_API_KEY}
