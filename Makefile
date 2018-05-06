@@ -42,3 +42,5 @@ test_xunit:
 
 test_api:
 	python test-api/check_api.py
+
+PYTHONPATH=. py.test --ignore=test_ui
