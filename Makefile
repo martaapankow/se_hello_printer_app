@@ -39,3 +39,6 @@ test_cov:
 
 test_xunit:
 	PYTHONPATH=. py.test --verbose -s --cov=. --junit-xml=test_results.xml
+
+test_api:
+	python test-api/check_api.py
