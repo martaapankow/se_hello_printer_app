@@ -16,7 +16,6 @@ script:
   - make docker_run
   - sleep 3; make test_api
 
-
 after_success:
   make docker_push
 

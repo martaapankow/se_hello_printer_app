@@ -8,7 +8,7 @@ lint:
 	flake8 hello_world test
 
 test:
-	PYTHONPATH=. py.test  --verbose -s
+	PYTHONPATH=. py.test  --verbose -s --ignore=test_ui
 
 test_smoke:
 	curl -I --fail 127.0.0.1:5000
@@ -35,12 +35,13 @@ docker_push: docker_build
 	docker logout;
 
 test_cov:
-	PYTHONPATH=. py.test --verbose -s --cov=.
+	PYTHONPATH=. py.test --verbose -s --cov=. --ignore=test_ui
 
 test_xunit:
-	PYTHONPATH=. py.test --verbose -s --cov=. --junit-xml=test_results.xml
+	PYTHONPATH=. py.test --verbose -s --cov=. --junit-xml=test_results.xml --ignore=test_ui
 
 test_api:
 	python test-api/check_api.py
 
-PYTHONPATH=. py.test --ignore=test_ui
+test_ui:
+	PYTHONPATH=. py.test  --verbose -s test_ui/test_ui.py
