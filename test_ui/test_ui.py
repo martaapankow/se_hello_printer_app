@@ -17,4 +17,4 @@ class TestFormater(unittest.TestCase):
         print(powitanie.text)
         self.assertEqual(powitanie.text, "WITAJ SWIECIE")
 
-    def 
+     
