@@ -8,7 +8,7 @@ class TestFormater(unittest.TestCase):
     def test_plain_lowercase(self):
         driver = webdriver.Chrome()
         driver.get("http://127.0.0.1:5000/ui")
-        self. do_valid_hello(driver)
+        self.do_valid_hello(driver)
         time.sleep(10)
         driver.quit()
 
@@ -16,3 +16,5 @@ class TestFormater(unittest.TestCase):
         powitanie = driver.find_element_by_id('Powitanie')
         print(powitanie.text)
         self.assertEqual(powitanie.text, "WITAJ SWIECIE")
+
+    def 
