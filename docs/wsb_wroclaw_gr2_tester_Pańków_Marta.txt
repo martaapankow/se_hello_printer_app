@@ -1,0 +1,22 @@
+AD 1.
+W projekcie stosujemy Git’a do kontroli versji oprogramowania. Za pomoc¹ Git’a przenosimy kod do repozytorium w chmurze, do Github’a.
+Korzystamy równie¿ z us³ug jakie oferuje TravisCI. Platforma ta daje nam mo¿liwoœæ przeprowadzenia testów oraz analizy kodu poprzez lintera.
+TravisCI równie¿ zosta³ wykorzystany do budowy pakietu dla naszego programu w formacie dockerfile.
+Obraz programu w dokerze zostaje przeniesiony do hub.docker, gdzie zosta³o stworzone wspólne repozutorium dla developerów i klientów.
+U¿ytkownicy mog¹ pobraæ ostatni¹ wersjê programu z hub.docker. Dziêki dockerowi program mo¿e byæ u¿ywany na dowolnym komputerze bez instalowania dodatkowego œrodowiska.
+Wykorzystujemy równie¿ TravisCI’a do wykonania deploymentu na platformê Heroku, która hostuje nasz¹ aplikacjê.
+Przed wprowadzeniem naszej aplikacji do produkcji zosta³ równie¿ przygotowany monitoring, który wykryje kiedy jestesmy offline. 
+Do obserwowania naszej aplikacji zosta³a wykorzystana us³uga oferowana na statuscake.com.
+
+AD 2.
+https://github.com/martaapankow/se_hello_printer_app
+
+AD 3.
+https://travis-ci.org/martaapankow/se_hello_printer_app
+
+AD 4.
+https://hub.docker.com/r/martaapankow/hello-world-printer/
+
+AD 5.
+https://dashboard.heroku.com/apps/secure-scrubland-39460
+
