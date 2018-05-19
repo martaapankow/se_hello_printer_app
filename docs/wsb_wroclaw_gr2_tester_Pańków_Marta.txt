@@ -1,12 +1,9 @@
 AD 1.
-W projekcie stosujemy Git’a do kontroli versji oprogramowania. Za pomoc¹ Git’a przenosimy kod do repozytorium w chmurze, do Github’a.
-Korzystamy równie¿ z us³ug jakie oferuje TravisCI. Platforma ta daje nam mo¿liwoœæ przeprowadzenia testów oraz analizy kodu poprzez lintera.
-TravisCI równie¿ zosta³ wykorzystany do budowy pakietu dla naszego programu w formacie dockerfile.
-Obraz programu w dokerze zostaje przeniesiony do hub.docker, gdzie zosta³o stworzone wspólne repozutorium dla developerów i klientów.
-U¿ytkownicy mog¹ pobraæ ostatni¹ wersjê programu z hub.docker. Dziêki dockerowi program mo¿e byæ u¿ywany na dowolnym komputerze bez instalowania dodatkowego œrodowiska.
-Wykorzystujemy równie¿ TravisCI’a do wykonania deploymentu na platformê Heroku, która hostuje nasz¹ aplikacjê.
-Przed wprowadzeniem naszej aplikacji do produkcji zosta³ równie¿ przygotowany monitoring, który wykryje kiedy jestesmy offline. 
-Do obserwowania naszej aplikacji zosta³a wykorzystana us³uga oferowana na statuscake.com.
+W naszej firmie mamy zaimplementowany process ciï¿½gï¿½ej integracji i deploymentu w oparciu o TravisCI.
+Na kaï¿½dy commit do githuba kod jest lintowany i testowany.
+Dla wybranych branchy kod jest deployowany jako usï¿½uga SaaS (heroku) i onpremise (pakiet z hub.docker.com jest pobierany automatycznie i uaktualniany onpremise).
+Prowadzimy ciï¿½gï¿½y monitoring naszej aplikacji udostï¿½pnianej poprzez Heroku.
+Do obserwowania naszego programu zostaï¿½a wykorzystana usï¿½uga oferowana na statuscake.com.
 
 AD 2.
 https://github.com/martaapankow/se_hello_printer_app
@@ -19,4 +16,3 @@ https://hub.docker.com/r/martaapankow/hello-world-printer/
 
 AD 5.
 https://dashboard.heroku.com/apps/secure-scrubland-39460
-
